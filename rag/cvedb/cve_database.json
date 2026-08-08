@@ -1,0 +1,2169 @@
+{
+  "last_synced": "2026-07-15T03:54:01.619434",
+  "total": 179,
+  "cves": [
+    {
+      "cve_id": "CVE-2014-6116",
+      "cvss": 4.3,
+      "severity": "UNKNOWN",
+      "published": "2014-10-19",
+      "modified": "2026-06-17",
+      "desc": "The Telemetry Component in WebSphere MQ 8.0.0.1 before p000-001-L140910 allows remote attackers to bypass authentication by setting the JAASConfig property in an MQTT client configuration.",
+      "cwes": [
+        "CWE-287"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2016-9877",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2016-12-29",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in Pivotal RabbitMQ 3.x before 3.5.8 and 3.6.x before 3.6.6 and RabbitMQ for PCF 1.5.x before 1.5.20, 1.6.x before 1.6.12, and 1.7.x before 1.7.7. MQTT (MQ Telemetry Transport) connection authentication with a username/password pair succeeds if an existing username is provided but the password is omitted from the connection request. Connections that use TLS with a client-provided certificate are not affected.",
+      "cwes": [
+        "CWE-284"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-7296",
+      "cvss": 6.1,
+      "severity": "MEDIUM",
+      "published": "2017-05-28",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in Contiki Operating System 3.0. A Persistent XSS vulnerability is present in the MQTT/IBM Cloud Config page (aka mqtt.html) of cc26xx-web-demo. The cc26xx-web-demo features a webserver that runs on a constrained device. That particular page allows a user to remotely configure that device's operation by sending HTTP POST requests. The vulnerability consists of improper input sanitisation of the text fields on the MQTT/IBM Cloud config page, allowing for JavaScript code in",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-9868",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2017-06-25",
+      "modified": "2026-06-17",
+      "desc": "In Mosquitto through 1.4.12, mosquitto.db (aka the persistence file) is world readable, which allows local users to obtain sensitive MQTT topic information.",
+      "cwes": [
+        "CWE-200"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-7650",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2017-09-11",
+      "modified": "2026-06-17",
+      "desc": "In Mosquitto before 1.4.12, pattern based ACLs can be bypassed by clients that set their username/client id to '#' or '+'. This allows locally or remotely connected clients to access MQTT topics that they do have the rights to. The same issue may be present in third party authentication/access control plugins for Mosquitto.",
+      "cwes": [
+        "CWE-287"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-2892",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2017-11-07",
+      "modified": "2026-06-17",
+      "desc": "An exploitable arbitrary memory read vulnerability exists in the MQTT packet parsing functionality of Cesanta Mongoose 6.8. A specially crafted MQTT packet can cause an arbitrary out-of-bounds memory read and write potentially resulting in information disclosure, denial of service and remote code execution. An attacker needs to send a specially crafted MQTT packet over the network to trigger this vulnerability.",
+      "cwes": [
+        "CWE-190"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-2893",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2017-11-07",
+      "modified": "2026-06-17",
+      "desc": "An exploitable NULL pointer dereference vulnerability exists in the MQTT packet parsing functionality of Cesanta Mongoose 6.8. An MQTT SUBSCRIBE packet can cause a NULL pointer dereference leading to server crash and denial of service. An attacker needs to send a specially crafted MQTT packet over the network to trigger this vulnerability.",
+      "cwes": [
+        "CWE-476"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-2894",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2017-11-07",
+      "modified": "2026-06-17",
+      "desc": "An exploitable stack buffer overflow vulnerability exists in the MQTT packet parsing functionality of Cesanta Mongoose 6.8. A specially crafted MQTT SUBSCRIBE packet can cause a stack buffer overflow resulting in remote code execution. An attacker needs to send a specially crafted MQTT packet over the network to trigger this vulnerability.",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-2895",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "published": "2017-11-07",
+      "modified": "2026-06-17",
+      "desc": "An exploitable arbitrary memory read vulnerability exists in the MQTT packet parsing functionality of Cesanta Mongoose 6.8. A specially crafted MQTT SUBSCRIBE packet can cause an arbitrary out-of-bounds memory read potentially resulting in information disclosure and denial of service. An attacker needs to send a specially crafted MQTT packet over the network to trigger this vulnerability.",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-10910",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2017-12-28",
+      "modified": "2026-06-17",
+      "desc": "MQTT.js 2.x.x prior to 2.15.0 issue in handling PUBLISH tickets may lead to an attacker causing a denial-of-service condition.",
+      "cwes": [
+        "CWE-674"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2017-7651",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2018-04-24",
+      "modified": "2026-06-17",
+      "desc": "In Eclipse Mosquitto 1.4.14, a user can shutdown the Mosquitto server simply by filling the RAM memory with a lot of connections with large payload. This can be done without authentications if occur in connection phase of MQTT protocol.",
+      "cwes": [
+        "CWE-789",
+        "CWE-400"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2016-10523",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2018-05-31",
+      "modified": "2026-06-17",
+      "desc": "MQTT before 3.4.6 and 4.0.x before 4.0.5 allows specifically crafted MQTT packets to crash the application, making a DoS attack feasible with very little bandwidth.",
+      "cwes": [
+        "CWE-400",
+        "CWE-119"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-8531",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2018-10-10",
+      "modified": "2026-06-17",
+      "desc": "A remote code execution vulnerability exists in the way that Azure IoT Hub Device Client SDK using MQTT protocol accesses objects in memory, aka \"Azure IoT Device Client SDK Memory Corruption Vulnerability.\" This affects Hub Device Client SDK, Azure IoT Edge.",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-18764",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "published": "2018-10-29",
+      "modified": "2026-06-17",
+      "desc": "An exploitable arbitrary memory read vulnerability exists in the MQTT packet-parsing functionality of Cesanta Mongoose 6.13. It is a heap-based buffer over-read in a parse_mqtt getu16 call. A specially crafted MQTT SUBSCRIBE packet can cause an arbitrary out-of-bounds memory read potentially resulting in information disclosure and denial of service. An attacker needs to send a specially crafted MQTT packet over the network to trigger this vulnerability.",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-18765",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "published": "2018-10-29",
+      "modified": "2026-06-17",
+      "desc": "An exploitable arbitrary memory read vulnerability exists in the MQTT packet-parsing functionality of Cesanta Mongoose 6.13. It is a heap-based buffer over-read in mg_mqtt_next_subscribe_topic. A specially crafted MQTT SUBSCRIBE packet can cause an arbitrary out-of-bounds memory read potentially resulting in information disclosure and denial of service. An attacker needs to send a specially crafted MQTT packet over the network to trigger this vulnerability.",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-15323",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "published": "2018-10-31",
+      "modified": "2026-06-17",
+      "desc": "On BIG-IP 14.0.0-14.0.0.2 or 13.0.0-13.1.1.1, in certain circumstances, when processing traffic through a Virtual Server with an associated MQTT profile, the TMM process may produce a core file and take the configured HA action.",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-1684",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "published": "2018-11-09",
+      "modified": "2026-06-17",
+      "desc": "IBM WebSphere MQ 8.0 through 9.1 is vulnerable to a error with MQTT topic string publishing that can cause a denial of service attack. IBM X-Force ID: 145456.",
+      "cwes": [],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-17614",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2018-11-13",
+      "modified": "2026-06-17",
+      "desc": "This vulnerability allows remote attackers to execute arbitrary code on vulnerable installations of Losant Arduino MQTT Client prior to V2.7. User interaction is not required to exploit this vulnerability. The specific flaw exists within the parsing of MQTT PUBLISH packets. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of ",
+      "cwes": [
+        "CWE-121",
+        "CWE-119"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-19417",
+      "cvss": 10.0,
+      "severity": "CRITICAL",
+      "published": "2018-11-21",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in the MQTT server in Contiki-NG before 4.2. The function parse_publish_vhdr() that parses MQTT PUBLISH messages with a variable length header uses memcpy to input data into a fixed size buffer. The allocated buffer can fit only MQTT_MAX_TOPIC_LENGTH (default 64) bytes, and a length check is missing. This could lead to Remote Code Execution via a stack-smashing attack (overwriting the function return address). Contiki-NG does not separate the MQTT server from other server",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-11993",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2019-01-18",
+      "modified": "2026-06-17",
+      "desc": "Improper check while accessing the local memory stack on MQTT connection request can lead to buffer overflow in snapdragon wear in versions MDM9206, MDM9607",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-11998",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-01-18",
+      "modified": "2026-06-17",
+      "desc": "While processing a packet decode request in MQTT, Race condition can occur leading to an out-of-bounds access in snapdragon mobile and snapdragon wear in versions MDM9206, MDM9607, SD 210/SD 212/SD 205, SD 427, SD 435, SD 450, SD 625, SD 636, SD 835, SDA660, SDM630, SDM660, Snapdragon_High_Med_2016",
+      "cwes": [
+        "CWE-362"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2018-5879",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2019-01-18",
+      "modified": "2026-06-17",
+      "desc": "Improper length check while processing an MQTT message can lead to heap overflow in snapdragon mobile and snapdragon wear in versions MDM9206, MDM9607, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 450, SD 625, SD 636, SD 835, SDA660, SDM630, SDM660",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-9749",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-03-13",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in the MQTT input plugin in Fluent Bit through 1.0.4. When this plugin acts as an MQTT broker (server), it mishandles incoming network messages. After processing a crafted packet, the plugin's mqtt_packet_drop function (in /plugins/in_mqtt/mqtt_prot.c) executes the memmove() function with a negative size parameter. That leads to a crash of the whole Fluent Bit server via a SIGSEGV signal.",
+      "cwes": [
+        "CWE-681"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-0222",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-03-28",
+      "modified": "2026-06-17",
+      "desc": "In Apache ActiveMQ 5.0.0 - 5.15.8, unmarshalling corrupt MQTT frame can lead to broker Out of Memory exception making it unresponsive.",
+      "cwes": [],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-10244",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-04-09",
+      "modified": "2026-06-17",
+      "desc": "In Eclipse Kura versions up to 4.0.0, the Web UI package and component services, the Artemis simple Mqtt component and the emulator position service (not part of the device distribution) could potentially be target of XXE attack due to an improper factory and parser initialisation.",
+      "cwes": [
+        "CWE-611",
+        "CWE-611"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-5432",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-05-06",
+      "modified": "2026-06-17",
+      "desc": "A specifically malformed MQTT Subscribe packet crashes MQTT Brokers using the mqtt-packet module versions < 3.5.1, 4.0.0 - 4.1.3, 5.0.0 - 5.6.1, 6.0.0 - 6.1.2 for decoding.",
+      "cwes": [
+        "CWE-126",
+        "CWE-125"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-12496",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-05-31",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in Hybrid Group Gobot before 1.13.0. The mqtt subsystem skips verification of root CA certificates by default.",
+      "cwes": [
+        "CWE-295"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-6241",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-06-10",
+      "modified": "2026-06-17",
+      "desc": "In Bevywise MQTTRoute 1.1 build 1018-002, a connect packet combined with a malformed unsubscribe request packet can be used to cause a Denial of Service attack against the broker.",
+      "cwes": [],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-5635",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-08-22",
+      "modified": "2026-06-17",
+      "desc": "A cleartext transmission of sensitive information vulnerability is present in Hickory Smart Ethernet Bridge from Belwith Products, LLC. Captured data reveals that the Hickory Smart Ethernet Bridge device communicates over the network to an MQTT broker without using encryption. This exposed the default username and password used to authenticate to the MQTT broker. This issue affects Hickory Smart Ethernet Bridge, model number H077646. The firmware does not appear to contain versioning information",
+      "cwes": [
+        "CWE-319",
+        "CWE-319"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-11777",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-09-11",
+      "modified": "2026-06-17",
+      "desc": "In the Eclipse Paho Java client library version 1.2.0, when connecting to an MQTT server using TLS and setting a host name verifier, the result of that verification is not checked. This could allow one MQTT server to impersonate another and provide the client library with incorrect information.",
+      "cwes": [
+        "CWE-346",
+        "CWE-346",
+        "CWE-755"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-11778",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "published": "2019-09-18",
+      "modified": "2026-06-17",
+      "desc": "If an MQTT v5 client connects to Eclipse Mosquitto versions 1.6.0 to 1.6.4 inclusive, sets a last will and testament, sets a will delay interval, sets a session expiry interval, and the will delay interval is set longer than the session expiry interval, then a use after free error occurs, which has the potential to cause a crash in some situations.",
+      "cwes": [
+        "CWE-416",
+        "CWE-416"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-11779",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2019-09-19",
+      "modified": "2026-06-17",
+      "desc": "In Eclipse Mosquitto 1.5.0 to 1.6.5 inclusive, if a malicious MQTT client sends a SUBSCRIBE packet containing a topic that consists of approximately 65400 or more '/' characters, i.e. the topic hierarchy separator, then a stack overflow will occur.",
+      "cwes": [
+        "CWE-754",
+        "CWE-674"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-16754",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-09-24",
+      "modified": "2026-06-17",
+      "desc": "RIOT 2019.07 contains a NULL pointer dereference in the MQTT-SN implementation (asymcute), potentially allowing an attacker to crash a network node running RIOT. This requires spoofing an MQTT server response. To do so, the attacker needs to know the MQTT MsgID of a pending MQTT protocol message and the ephemeral port used by RIOT's MQTT implementation. Additionally, the server IP address is required for spoofing the packet.",
+      "cwes": [
+        "CWE-476"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-13120",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-10-07",
+      "modified": "2026-06-17",
+      "desc": "Amazon FreeRTOS up to and including v1.4.8 lacks length checking in prvProcessReceivedPublish, resulting in untargetable leakage of arbitrary memory contents on a device to an attacker. If an attacker has the authorization to send a malformed MQTT publish packet to an Amazon IoT Thing, which interacts with an associated vulnerable MQTT message in the application, specific circumstances could trigger this vulnerability.",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-17389",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-10-09",
+      "modified": "2026-06-17",
+      "desc": "In RIOT 2019.07, the MQTT-SN implementation (asymcute) mishandles errors occurring during a read operation on a UDP socket. The receive loop ends. This allows an attacker (via a large packet) to prevent a RIOT MQTT-SN client from working until the device is restarted.",
+      "cwes": [],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-17210",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-11-04",
+      "modified": "2026-06-17",
+      "desc": "A denial-of-service issue was discovered in the MQTT library in Arm Mbed OS 2017-11-02. The function readMQTTLenString() is called by the function MQTTDeserialize_publish() to get the length and content of the MQTT topic name. In the function readMQTTLenString(), mqttstring->lenstring.len is a part of user input, which can be manipulated. An attacker can simply change it to a larger value to invalidate the if statement so that the statements inside the if statement are skipped, letting the value",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2019-19307",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-11-26",
+      "modified": "2026-06-17",
+      "desc": "An integer overflow in parse_mqtt in mongoose.c in Cesanta Mongoose 6.16 allows an attacker to achieve remote DoS (infinite loop), or possibly cause an out-of-bounds write, by sending a crafted MQTT protocol packet.",
+      "cwes": [
+        "CWE-125",
+        "CWE-190",
+        "CWE-787",
+        "CWE-835"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-13849",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2020-06-04",
+      "modified": "2026-06-17",
+      "desc": "The MQTT protocol 3.1.1 requires a server to set a timeout value of 1.5 times the Keep-Alive value specified by a client, which allows remote attackers to cause a denial of service (loss of the ability to establish new connections), as demonstrated by SlowITe.",
+      "cwes": [
+        "CWE-400"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-10062",
+      "cvss": 9.0,
+      "severity": "CRITICAL",
+      "published": "2020-06-05",
+      "modified": "2026-06-17",
+      "desc": "An off-by-one error in the Zephyr project MQTT packet length decoder can result in memory corruption and possible remote code execution. NCC-ZEP-031 This issue affects: zephyrproject-rtos zephyr version 2.2.0 and later versions.",
+      "cwes": [
+        "CWE-193",
+        "CWE-193"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-10070",
+      "cvss": 9.0,
+      "severity": "CRITICAL",
+      "published": "2020-06-05",
+      "modified": "2026-06-17",
+      "desc": "In the Zephyr Project MQTT code, improper bounds checking can result in memory corruption and possibly remote code execution. NCC-ZEP-031 This issue affects: zephyrproject-rtos zephyr version 2.2.0 and later versions.",
+      "cwes": [
+        "CWE-120",
+        "CWE-190",
+        "CWE-120"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-10071",
+      "cvss": 9.0,
+      "severity": "CRITICAL",
+      "published": "2020-06-05",
+      "modified": "2026-06-17",
+      "desc": "The Zephyr MQTT parsing code performs insufficient checking of the length field on publish messages, allowing a buffer overflow and potentially remote code execution. NCC-ZEP-031 This issue affects: zephyrproject-rtos zephyr version 2.2.0 and later versions.",
+      "cwes": [
+        "CWE-120",
+        "CWE-129",
+        "CWE-120"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-13932",
+      "cvss": 6.1,
+      "severity": "MEDIUM",
+      "published": "2020-07-20",
+      "modified": "2026-06-17",
+      "desc": "In Apache ActiveMQ Artemis 2.5.0 to 2.13.0, a specially crafted MQTT packet which has an XSS payload as client-id or topic name can exploit this vulnerability. The XSS payload is being injected into the admin console's browser. The XSS payload is triggered in the diagram plugin; queue node and the info section.",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-16168",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2020-08-07",
+      "modified": "2026-06-17",
+      "desc": "Origin Validation Error in temi Robox OS prior to 120, temi Android app up to 1.3.7931 allows remote attackers to access the REST API and MQTT broker used by the temi and send it custom data/requests via unspecified vectors.",
+      "cwes": [
+        "CWE-346"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-13821",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "published": "2020-08-26",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in HiveMQ Broker Control Center 4.3.2. A crafted clientid parameter in an MQTT packet (sent to the Broker) is reflected in the client section of the management console. The attacker's JavaScript is loaded in a browser, which can lead to theft of the session and cookie of the administrator's account of the Broker.",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-5935",
+      "cvss": 5.9,
+      "severity": "MEDIUM",
+      "published": "2020-10-29",
+      "modified": "2026-06-17",
+      "desc": "On BIG-IP (LTM, AAM, AFM, Analytics, APM, ASM, DNS, FPS, GTM, Link Controller, PEM) versions 15.1.0-15.1.0.5, 14.1.0-14.1.2.3, and 13.1.0-13.1.3.3, when handling MQTT traffic through a BIG-IP virtual server associated with an MQTT profile and an iRule performing manipulations on that traffic, TMM may produce a core file.",
+      "cwes": [],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-6881",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2020-12-21",
+      "modified": "2026-06-17",
+      "desc": "ZTE E8810/E8820/E8822 series routers have an MQTT DoS vulnerability, which is caused by the failure of the device to verify the validity of abnormal messages. A remote attacker could connect to the MQTT server and send an MQTT exception message to the specified device, which will cause the device to deny service. This affects:<ZXHN E8810, ZXHN E8820, ZXHN E8822><E8810 V1.0.26, E8810 V2.0.1, E8820 V1.1.3L, E8820 V2.0.13, E8822 V2.0.13>",
+      "cwes": [
+        "CWE-346"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-6882",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2020-12-21",
+      "modified": "2026-06-17",
+      "desc": "ZTE E8810/E8820/E8822 series routers have an information leak vulnerability, which is caused by hard-coded MQTT service access credentials on the device. The remote attacker could use this credential to connect to the MQTT server, so as to obtain information about other devices by sending specific topics. This affects:<ZXHN E8810, ZXHN E8820, ZXHN E8822><E8810 V1.0.26, E8810 V2.0.1, E8820 V1.1.3L, E8820 V2.0.13, E8822 V2.0.13>",
+      "cwes": [
+        "CWE-798"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2020-27220",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2021-01-14",
+      "modified": "2026-06-17",
+      "desc": "The Eclipse Hono AMQP and MQTT protocol adapters do not check whether an authenticated gateway device is authorized to receive command & control messages when it has subscribed only to commands for a specific device. The missing check involves verifying that the command target device is configured giving permission for the gateway device to act on its behalf. This means an authenticated device of a certain tenant, notably also a non-gateway device acting like a gateway, may receive command & con",
+      "cwes": [
+        "CWE-862",
+        "CWE-862"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-28166",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2021-04-07",
+      "modified": "2026-06-17",
+      "desc": "In Eclipse Mosquitto version 2.0.0 to 2.0.9, if an authenticated client that had connected with MQTT v5 sent a crafted CONNACK message to the broker, a NULL pointer dereference would occur.",
+      "cwes": [
+        "CWE-476",
+        "CWE-476"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-0229",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "published": "2021-04-22",
+      "modified": "2026-06-17",
+      "desc": "An uncontrolled resource consumption vulnerability in Message Queue Telemetry Transport (MQTT) server of Juniper Networks Junos OS allows an attacker to cause MQTT server to crash and restart leading to a Denial of Service (DoS) by sending a stream of specific packets. A Juniper Extension Toolkit (JET) application designed with a listening port uses the Message Queue Telemetry Transport (MQTT) protocol to connect to a mosquitto broker that is running on Junos OS to subscribe for events. Continue",
+      "cwes": [
+        "CWE-400",
+        "CWE-400"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-33176",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2021-06-08",
+      "modified": "2026-06-17",
+      "desc": "VerneMQ MQTT Broker versions prior to 1.12.0 are vulnerable to a denial of service attack as a result of excessive memory consumption due to the handling of untrusted inputs. These inputs cause the message broker to consume large amounts of memory, resulting in the application being terminated by the operating system.",
+      "cwes": [
+        "CWE-502",
+        "CWE-770"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-34431",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2021-07-22",
+      "modified": "2026-06-17",
+      "desc": "In Eclipse Mosquitto version 1.6 to 2.0.10, if an authenticated client that had connected with MQTT v5 sent a crafted CONNECT message to the broker a memory leak would occur, which could be used to provide a DoS attack against the broker.",
+      "cwes": [
+        "CWE-401",
+        "CWE-401"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-22945",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "published": "2021-09-23",
+      "modified": "2026-06-17",
+      "desc": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+      "cwes": [
+        "CWE-415",
+        "CWE-415",
+        "CWE-415"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-21913",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2021-09-23",
+      "modified": "2026-06-17",
+      "desc": "An information disclosure vulnerability exists in the WiFi Smart Mesh functionality of D-LINK DIR-3040 1.13B03. A specially-crafted network request can lead to command execution. An attacker can connect to the MQTT service to trigger this vulnerability.",
+      "cwes": [
+        "CWE-798",
+        "CWE-798"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-41036",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2021-11-03",
+      "modified": "2026-06-17",
+      "desc": "In versions prior to 1.1 of the Eclipse Paho MQTT C Client, the client does not check rem_len size in readpacket.",
+      "cwes": [
+        "CWE-787",
+        "CWE-787"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-3787",
+      "cvss": 6.4,
+      "severity": "MEDIUM",
+      "published": "2021-11-12",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability was reported in some Motorola-branded Binatone Hubble Cameras that could allow an attacker with local access to obtain the MQTT credentials that could result in unauthorized access to backend Hubble services.",
+      "cwes": [
+        "CWE-256"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-40830",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "published": "2021-11-23",
+      "modified": "2026-06-17",
+      "desc": "The AWS IoT Device SDK v2 for Java, Python, C++ and Node.js appends a user supplied Certificate Authority (CA) to the root CAs instead of overriding it on Unix systems. TLS handshakes will thus succeed if the peer can be verified either from the user-supplied CA or the system\u2019s default trust-store. Attackers with access to a host\u2019s trust stores or are able to compromise a certificate authority already in the host's trust store (note: the attacker must also be able to spoof DNS in this case) may ",
+      "cwes": [
+        "CWE-295"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-40831",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "published": "2021-11-23",
+      "modified": "2026-06-17",
+      "desc": "The AWS IoT Device SDK v2 for Java, Python, C++ and Node.js appends a user supplied Certificate Authority (CA) to the root CAs instead of overriding it on macOS systems. Additionally, SNI validation is also not enabled when the CA has been \u201coverridden\u201d. TLS handshakes will thus succeed if the peer can be verified either from the user-supplied CA or the system\u2019s default trust-store. Attackers with access to a host\u2019s trust stores or are able to compromise a certificate authority already in the hos",
+      "cwes": [
+        "CWE-295"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-41039",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2021-12-01",
+      "modified": "2026-06-17",
+      "desc": "In versions 1.6 to 2.0.11 of Eclipse Mosquitto, an MQTT v5 client connecting with a large number of user-property properties could cause excessive CPU usage, leading to a loss of performance and possible denial of service.",
+      "cwes": [
+        "CWE-1050"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2021-45932",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2022-01-01",
+      "modified": "2026-06-17",
+      "desc": "wolfSSL wolfMQTT 1.9 has a heap-based buffer overflow (4 bytes) in MqttDecode_Publish (called from MqttClient_DecodePacket and MqttClient_HandlePacket).",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "MQTT"
+    },
+    {
+      "cve_id": "CVE-2011-5135",
+      "cvss": 6.0,
+      "severity": "UNKNOWN",
+      "published": "2012-08-30",
+      "modified": "2026-06-16",
+      "desc": "Multiple SQL injection vulnerabilities in the save_connection function in lib/lib.iotask.php in the iotask module in DoceboLMS 4.0.4 and earlier allow remote authenticated users with admin or teacher privileges to execute arbitrary SQL commands via the (1) coursereportuiconfig[name] or (2) coursereportuiconfig[description] parameters to index.php.",
+      "cwes": [
+        "CWE-89"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2014-1381",
+      "cvss": 10.0,
+      "severity": "UNKNOWN",
+      "published": "2014-07-01",
+      "modified": "2026-06-17",
+      "desc": "Thunderbolt in Apple OS X before 10.9.4 does not properly restrict IOThunderBoltController API calls, which allows attackers to execute arbitrary code or cause a denial of service (out-of-bounds memory access and application crash) via a crafted call.",
+      "cwes": [
+        "CWE-264"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2015-7067",
+      "cvss": 2.1,
+      "severity": "UNKNOWN",
+      "published": "2015-12-11",
+      "modified": "2026-06-17",
+      "desc": "IOThunderboltFamily in Apple OS X before 10.11.2 allows local users to cause a denial of service (NULL pointer dereference) via an unspecified userclient type.",
+      "cwes": [],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2016-4727",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2016-09-25",
+      "modified": "2026-06-17",
+      "desc": "IOThunderboltFamily in Apple OS X before 10.12 allows attackers to execute arbitrary code in a privileged context or cause a denial of service (memory corruption) via a crafted app.",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-7243",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2017-03-24",
+      "modified": "2026-06-17",
+      "desc": "Eclipse tinydtls 0.8.2 for Eclipse IoT allows remote attackers to cause a denial of service (DTLS peer crash) by sending a \"Change cipher spec\" packet without pre-handshake.",
+      "cwes": [
+        "CWE-476"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-7911",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2017-05-06",
+      "modified": "2026-06-17",
+      "desc": "A Code Injection issue was discovered in CyberVision Kaa IoT Platform, Version 0.7.4. An insufficient-encapsulation vulnerability has been identified, which may allow remote code execution.",
+      "cwes": [
+        "CWE-485",
+        "CWE-94"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-6780",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2017-09-07",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability in the TCP throttling process for Cisco IoT Field Network Director (IoT-FND) could allow an unauthenticated, remote attacker to cause the system to consume additional memory, eventually forcing the device to restart, aka Memory Exhaustion. The vulnerability is due to insufficient rate-limiting protection. An attacker could exploit this vulnerability by sending a high rate of TCP packets to a specific group of open listening ports on a targeted device. An exploit could allow the a",
+      "cwes": [
+        "CWE-399",
+        "CWE-770"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-16567",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "published": "2017-11-10",
+      "modified": "2026-06-17",
+      "desc": "Persistent Cross-Site Scripting (XSS) vulnerability in Logitech Media Server 7.9.0, affecting the \"Favorites\" feature. This vulnerability allows remote attackers to inject and permanently store malicious JavaScript payloads, which are executed when users access the affected functionality. Exploitation of this vulnerability can lead to Session Hijacking and Credential Theft, Execution of unauthorized actions on behalf of users, and Exfiltration of sensitive data. This vulnerability presents a pot",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-12465",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-02-07",
+      "modified": "2026-06-17",
+      "desc": "Multiple integer overflows in CCN-lite before 2.00 allow context-dependent attackers to have unspecified impact via vectors involving the (1) vallen variable in the iottlv_parse_sequence function or (2) typ, vallen and i variables in the localrpc_parse function.",
+      "cwes": [
+        "CWE-190"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-14910",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-02-23",
+      "modified": "2026-06-17",
+      "desc": "In Snapdragon Automobile, Snapdragon IoT and Snapdragon Mobile MDM9206 MDM9607, MDM9650, S820A, S820Am, SD 210/SD 212/SD 205, SD 410/12, SD 425, SD 430, SD 615/16/SD 415, SD 617, SD 625, SD 650/52, SD 820, SD 835, and SD 845, a buffer overread is possible if there are no newlines in an input file.",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-11010",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-30",
+      "modified": "2026-06-17",
+      "desc": "In Android before 2018-01-05 on Qualcomm Snapdragon IoT, Snapdragon Mobile MDM9206, MDM9650, SD 210/SD 212/SD 205, SD 625, SD 650/52, SD 835, access control left a configuration space unprotected.",
+      "cwes": [],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-14906",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-30",
+      "modified": "2026-06-17",
+      "desc": "In Android before 2018-01-05 on Qualcomm Snapdragon IoT, Snapdragon Mobile MDM9206, MDM9607, MSM8909W, SD 210/SD 212/SD 205, SD 410/12, PKCS7 padding is not supported by the crypto storage APIs.",
+      "cwes": [],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-14911",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-30",
+      "modified": "2026-06-17",
+      "desc": "In Android before 2018-01-05 on Qualcomm Snapdragon IoT, Snapdragon Mobile, Snapdragon Automobile APQ8096AU, MDM9206, MDM9650, MSM8996AU, SD 210/SD 212/SD 205, SD 425, SD 430, SD 625, SD 650/52, SD 820, SD 835, it is possible for the XBL loader to skip the authentication of device config.",
+      "cwes": [
+        "CWE-287"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-14912",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-30",
+      "modified": "2026-06-17",
+      "desc": "In Android before 2018-01-05 on Qualcomm Snapdragon IoT, Snapdragon Mobile [VERSION]: MDM9206, MDM9607, MDM9650, MSM8909W, SD 200, SD 210/SD 212/SD 205, SD 400, SD 410/12, SD 425, SD 430, SD 615/16/SD 415, SD 617, SD 625, SD 650/52, SD 800, SD 835, the attributes of buffers in Secure Display were not marked properly.",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2017-14913",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-30",
+      "modified": "2026-06-17",
+      "desc": "In Android before 2018-01-05 on Qualcomm Snapdragon IoT, Snapdragon Mobile MDM9206, SD 625, SD 650/52, SD 835, SD 845, DDR address input validation is being improperly truncated.",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-8119",
+      "cvss": 5.6,
+      "severity": "MEDIUM",
+      "published": "2018-05-09",
+      "modified": "2026-06-17",
+      "desc": "A spoofing vulnerability exists when the Azure IoT Device Provisioning AMQP Transport library improperly validates certificates over the AMQP protocol, aka \"Azure IoT SDK Spoofing Vulnerability.\" This affects C# SDK, C SDK, Java SDK.",
+      "cwes": [
+        "CWE-295"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-0270",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2018-05-17",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability in the web-based management interface of Cisco IoT Field Network Director (IoT-FND) could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and alter the data of existing users and groups on an affected device. The vulnerability is due to insufficient CSRF protections for the web-based management interface on an affected device. An attacker could exploit this vulnerability by persuading a user of the interface to follow a malicious li",
+      "cwes": [
+        "CWE-352",
+        "CWE-352"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11629",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-06-02",
+      "modified": "2026-06-17",
+      "desc": "Default and unremovable support credentials (user:lutron password:integration) allow attackers to gain total super user control of an IoT device through a TELNET session to products using the HomeWorks QS Lutron integration protocol Revision M to Revision Y. NOTE: The vendor disputes this id as not being a vulnerability because what can be done through the ports revolve around controlling lighting, not code execution. A certain set of commands are listed, which bear some similarity to code, but ",
+      "cwes": [
+        "CWE-798"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11681",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-06-02",
+      "modified": "2026-06-17",
+      "desc": "Default and unremovable support credentials (user:nwk password:nwk2) allow attackers to gain total super user control of an IoT device through a TELNET session to products using the RadioRA 2 Lutron integration protocol Revision M to Revision Y. NOTE: The vendor disputes this id as not being a vulnerability because what can be done through the ports revolve around controlling lighting, not code execution. A certain set of commands are listed, which bear some similarity to code, but they are not ",
+      "cwes": [
+        "CWE-798",
+        "CWE-798"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11682",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-06-02",
+      "modified": "2026-06-17",
+      "desc": "Default and unremovable support credentials allow attackers to gain total super user control of an IoT device through a TELNET session to products using the Stanza Lutron integration protocol Revision M to Revision Y. NOTE: The vendor disputes this id as not being a vulnerability because what can be done through the ports revolve around controlling lighting, not code execution. A certain set of commands are listed, which bear some similarity to code, but they are not arbitrary and do not allow a",
+      "cwes": [
+        "CWE-798",
+        "CWE-798"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-12163",
+      "cvss": 4.8,
+      "severity": "MEDIUM",
+      "published": "2018-09-12",
+      "modified": "2026-06-17",
+      "desc": "A DLL injection vulnerability in the Intel IoT Developers Kit 4.0 installer may allow an authenticated user to potentially escalate privileges using file modification via local access.",
+      "cwes": [
+        "CWE-427"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-8479",
+      "cvss": 5.6,
+      "severity": "MEDIUM",
+      "published": "2018-09-13",
+      "modified": "2026-06-17",
+      "desc": "A spoofing vulnerability exists for the Azure IoT Device Provisioning for the C SDK library using the HTTP protocol on Windows platform, aka \"Azure IoT SDK Spoofing Vulnerability.\" This affects C SDK.",
+      "cwes": [
+        "CWE-295"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2019-1644",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-01-23",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability in the UDP protocol implementation for Cisco IoT Field Network Director (IoT-FND) could allow an unauthenticated, remote attacker to exhaust system resources, resulting in a denial of service (DoS) condition. The vulnerability is due to improper resource management for UDP ingress packets. An attacker could exploit this vulnerability by sending a high rate of UDP packets to an affected system within a short period of time. A successful exploit could allow the attacker to exhaust ",
+      "cwes": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11847",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-11",
+      "modified": "2026-06-17",
+      "desc": "Malicious TA can tag QSEE kernel memory and map to EL0, there by corrupting the physical memory as well it can be used to corrupt the QSEE kernel and compromise the whole TEE in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables and Snapdragon Wired Infrastructure and Networking in versions IPQ8074, MDM9206,",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11855",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-11",
+      "modified": "2026-06-17",
+      "desc": "If an end user makes use of SCP11 sample OCE code without modification it could lead to a buffer overflow when transmitting a CAPDU in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT and Snapdragon Mobile in versions MDM9607, MDM9650, MDM9655, MSM8996AU, SD 210/SD 212/SD 205, SD 410/12, SD 636, SD 820, SD 820A, SD 835, SD 8CX, SDA660, SDM630, SDM660.",
+      "cwes": [
+        "CWE-190"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11888",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-11",
+      "modified": "2026-06-17",
+      "desc": "Unauthorized access may be allowed by the SCP11 Crypto Services TA will processing commands from other TA in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile and Snapdragon Voice & Music in versions MDM9607, MDM9650, MDM9655, MSM8996AU, SD 210/SD 212/SD 205, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 615/16/SD 415, SD 625, SD 632, SD 650/52,",
+      "cwes": [
+        "CWE-862"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11899",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-11",
+      "modified": "2026-06-17",
+      "desc": "While processing radio connection status change events, Radio index is not properly validated in Snapdragon Auto, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile and Snapdragon Voice & Music in versions MDM9206, MDM9607, MDM9640, MDM9650, MSM8996AU, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 625, SD 636, SD 650/52, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDA660, SDM43",
+      "cwes": [
+        "CWE-129"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13888",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-11",
+      "modified": "2026-06-17",
+      "desc": "There is potential for memory corruption in the RIL daemon due to de reference of memory outside the allocated array length in RIL in Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables in versions MDM9206, MDM9607, MDM9635M, MDM9650, MSM8909W, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 625, SD 636, SD 650/52, SD 675, SD 712 / SD 710 / SD 670, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDM439, SDM630, ",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11289",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Data truncation during higher to lower type conversion which causes less memory allocation than desired can lead to a buffer overflow in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wired Infrastructure and Networking in versions IPQ8074, MDM9150, MDM9206, MDM9607, MDM9650, MDM9655, MSM8996AU, QCA8081, QCS605, SD 210/SD 212/SD ",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11820",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Use of non-time constant memcmp function creates side channel that leaks information and leads to cryptographic issues in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wired Infrastructure and Networking in versions IPQ8074, MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MDM9655, MSM8996AU, QCA8081, QCS605, SD 210/",
+      "cwes": [],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11845",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Usage of non-time-constant comparison functions can lead to information leakage through side channel analysis in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music in versions MDM9150, MDM9206, MDM9607, MDM9650, MDM9655, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 625, SD 632, S",
+      "cwes": [
+        "CWE-200"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11864",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Bytes can be written to fuses from Secure region which can be read later by HLOS in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wired Infrastructure and Networking in versions IPQ8074, MDM9150, MDM9206, MDM9607, MDM9650, MDM9655, MSM8996AU, QCA8081, QCS605, SD 210/SD 212/SD 205, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 43",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11931",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper access to HLOS is possible while transferring memory to CPZ in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music in versions MDM9150, MDM9206, MDM9607, MDM9650, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 615/16/SD 415, SD 625, SD 632, SD 636, SD 650/52, SD 675, SD 712",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11932",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation can lead RW access to secure subsystem from HLOS in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile in versions MDM9650, MDM9655, MSM8996AU, QCS605, SD 410/12, SD 615/16/SD 415, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 8CX, SXR1130.",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11935",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation might result in incorrect app id returned to the caller Instead of returning failure in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile in versions MDM9607, MDM9650, MDM9655, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 410/12, SD 615/16/SD 415, SD 636, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 8CX, SDA660,",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11938",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation for argument received from HLOS can lead to buffer overflows and unexpected behavior in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables, Snapdragon Wired Infrastructure and Networking in versions IPQ8074, MDM9150, MDM9206, MDM9607, MDM9650, MSM8909W, MSM8996AU, QCA8081, QCS605, S",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11945",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation in wireless service messaging module for data received from broadcast messages can lead to heap overflow in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in versions MDM9150, MDM9206, MDM9607, MDM9615, MDM9625, MDM9635M, MDM9640, MDM9650, MDM9655, MSM8909W, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 4",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11948",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Exceeding the limit of usage entries are not tracked and the information will be lost causing the content to lose continuity in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music in versions MSM8996AU, QCS605, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 625, SD 632, SD 636, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD ",
+      "cwes": [
+        "CWE-129"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13900",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Use-after-free vulnerability will occur as there is no protection for the route table`s rule in IPA driver in Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in versions MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8909W, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 625, SD 636, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 855",
+      "cwes": [
+        "CWE-416"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13904",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation in SCM handler to access storage in TZ can lead to unauthorized access in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile in versions MDM9206, MDM9607, MDM9650, MDM9655, QCS605, SD 410/12, SD 675, SD 712 / SD 710 / SD 670, SD 8CX, SXR1130.",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13905",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "KGSL syncsource lock not handled properly during syncsource cleanup can lead to use after free issue in Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables in MDM9206, MDM9607, MDM9650, MSM8909W, QCS605, SD 210/SD 212/SD 205, SD 439 / SD 429, SD 712 / SD 710 / SD 670, SD 820A, SD 845 / SD 850, SD 855, SDM439, SDM660, SDX24.",
+      "cwes": [
+        "CWE-416"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13912",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Arbitrary write issue can occur when user provides kernel address in compat mode in Snapdragon Auto, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8909W, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 425, SD 439 / SD 429, SD 625, SD 636, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SDA660, SDM439, SDM630, SDM660, SDX20, SDX24.",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13913",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improper validation of array index can lead to unauthorized access while processing debugFS in Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in version MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8909W, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 425, SD 439 / SD 429, SD 615/16/SD 415, SD 625, SD 636, SD 650/52, SD 712 / SD 710 / SD 670, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDA660, S",
+      "cwes": [
+        "CWE-129"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13914",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Lack of input validation for data received from user space can lead to an out of bound array issue in Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables in version MDM9150, MDM9206, MDM9607, MDM9650, MSM8909W, MSM8996AU, SD 210/SD 212/SD 205, SD 636, SD 820A, SD 835, SDM630, SDM660, SDX20.",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-5839",
+      "cvss": 7.1,
+      "severity": "HIGH",
+      "published": "2019-02-25",
+      "modified": "2026-06-17",
+      "desc": "Improperly configured memory protection allows read/write access to modem image from HLOS kernel in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile in versions MDM9150, MDM9615, MDM9625, MDM9635M, MDM9640, MDM9650, MDM9655, MSM8996AU, QCS605, SD 636, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 855, SD 8CX, SDA660, SDM630, SDM660, SDX20, SXR1130.",
+      "cwes": [
+        "CWE-269"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2019-0729",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-03-05",
+      "modified": "2026-06-17",
+      "desc": "An Elevation of Privilege vulnerability exists in the way Azure IoT Java SDK generates symmetric keys for encryption, allowing an attacker to predict the randomness of the key, aka 'Azure IoT Java SDK Elevation of Privilege Vulnerability'.",
+      "cwes": [
+        "CWE-330"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2019-0741",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-03-05",
+      "modified": "2026-06-17",
+      "desc": "An information disclosure vulnerability exists in the way Azure IoT Java SDK logs sensitive information, aka 'Azure IoT Java SDK Information Disclosure Vulnerability'.",
+      "cwes": [
+        "CWE-532"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2019-9750",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "published": "2019-03-13",
+      "modified": "2026-06-17",
+      "desc": "In IoTivity through 1.3.1, the CoAP server interface can be used for Distributed Denial of Service attacks using source IP address spoofing and UDP-based traffic amplification. The reflected traffic is 6 times bigger than spoofed requests. This occurs because the construction of a \"4.01 Unauthorized\" response is mishandled. NOTE: the vendor states \"While this is an interesting attack, there is no plan for maintainer to fix, as we are migrating to IoTivity Lite.\"",
+      "cwes": [
+        "CWE-400"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11830",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-04-04",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation in QCPE create function may lead to integer overflow in Snapdragon Auto, Snapdragon Consumer Electronics Connectivity, Snapdragon Industrial IOT, Snapdragon Mobile in MDM9206, MDM9607, MDM9650, MDM9655, MSM8996AU, SD 410/12, SD 820A",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11958",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-04-04",
+      "modified": "2026-06-17",
+      "desc": "Insufficient protection of keys in keypad can lead HLOS to gain access to confidential keypad input data in Snapdragon Auto, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music in MDM9206, MDM9607, MDM9650, MDM9655, Qualcomm 215, SD 210/SD 212/SD 205, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 615/16/SD 415, SD 625, SD 632, SD 636, SD 650/52, SDA660, SDM439, SDM630, SDM660, Snapd",
+      "cwes": [],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11966",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-04-04",
+      "modified": "2026-06-17",
+      "desc": "Undefined behavior in UE while processing unknown IEI in OTA message in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables in MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MDM9655, MSM8909W, MSM8996AU, QCS605, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 625, SD 632, SD 636, SD 650/52, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDA660, SDM439,",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11970",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-04-04",
+      "modified": "2026-06-17",
+      "desc": "TZ App dynamic allocations not protected from XBL loader in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile in MDM9206, MDM9607, MDM9650, MDM9655, QCS605, SD 410/12, SD 636, SD 712 / SD 710 / SD 670, SD 845 / SD 850, SD 8CX, SDA660, SDM630, SDM660, SXR1130",
+      "cwes": [],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11971",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2019-04-04",
+      "modified": "2026-06-17",
+      "desc": "Interrupt exit code flow may undermine access control policy set forth by secure world can lead to potential secure asset leakage in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, in MDM9206, MDM9607, MDM9650, MDM9655, QCS605, SD 410/12, SD 615/16/SD 415, SD 636, SD 712 / SD 710 / SD 670, SD 845 / SD 850, SD 8CX, SDA660, SDM630, SDM660, SXR1130",
+      "cwes": [
+        "CWE-200"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-13918",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-04-04",
+      "modified": "2026-06-17",
+      "desc": "kernel could return a received message length higher than expected, which leads to buffer overflow in a subsequent operation and stops normal operation in Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables, in MDM9150, MDM9206, MDM9607, MDM9650, MSM8909W, QCS605, Qualcomm 215, SD 425, SD 439 / SD 429, SD 450, SD 625, SD 632, SD 675, SD 712 / SD 710 / SD 670, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDM439, SDX24, SM7150",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11271",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-05-24",
+      "modified": "2026-06-17",
+      "desc": "Improper authentication can happen on Remote command handling due to inappropriate handling of events in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Wearables in MDM9206, MDM9607, MDM9650, MSM8909W, MSM8996AU, QCS605, Qualcomm 215, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 615/16/SD 415, SD 625, SD 632, SD 636, SD 650/52, SD 675, SD 712 / SD ",
+      "cwes": [
+        "CWE-287"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11923",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-05-24",
+      "modified": "2026-06-17",
+      "desc": "Improper buffer length check before copying can lead to integer overflow and then a buffer overflow in WMA event handler in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile in MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8996AU, QCA6574AU, QCS605, SD 425, SD 427, SD 430, SD 435, SD 450, SD 625, SD 636, SD 712 / SD 710 / SD 670, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDA660, SDM630, SDM660, SDX20, SDX24",
+      "cwes": [
+        "CWE-119",
+        "CWE-190"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11924",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-05-24",
+      "modified": "2026-06-17",
+      "desc": "Improper buffer length validation in WLAN function can lead to a potential integer oveflow issue in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music in MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8996AU, QCA6174A, QCA6574AU, QCA9377, QCA9379, QCS605, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 450, SD 625, SD 636, SD 675, SD 712 / SD 710 / SD 670, SD ",
+      "cwes": [
+        "CWE-190"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11925",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-05-24",
+      "modified": "2026-06-17",
+      "desc": "Data length received from firmware is not validated against the max allowed size which can result in buffer overflow. in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wired Infrastructure and Networking in IPQ4019, IPQ8064, IPQ8074, MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, QCS605, SD 425, SD 427, SD 430, SD 435, SD 450, SD 625, SD 636, SD 712 / SD 710 / SD 670, SD 835, SD 845 / SD 850, SD 855, SDA660, SDM630, SDM660, SD",
+      "cwes": [
+        "CWE-190"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2018-11927",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-05-24",
+      "modified": "2026-06-17",
+      "desc": "Improper input validation on input which is used as an array index will lead to an out of bounds issue while processing AP find event from firmware in Snapdragon Auto, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music in MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8996AU, QCA6174A, QCA6574AU, QCA9377, QCA9379, SD 210/SD 212/SD 205, SD 625, SD 675, SD 712 / SD 710 / SD 670, SD 820, SD 820A, SD 845 / SD",
+      "cwes": [
+        "CWE-129"
+      ],
+      "keyword": "IoT"
+    },
+    {
+      "cve_id": "CVE-2011-3386",
+      "cvss": 4.0,
+      "severity": "UNKNOWN",
+      "published": "2011-09-02",
+      "modified": "2026-06-16",
+      "desc": "Unspecified vulnerability in Medtronic Paradigm wireless insulin pump 512, 522, 712, and 722 allows remote attackers to modify the delivery of an insulin bolus dose and cause a denial of service (adverse human health effects) via unspecified vectors involving wireless communications and knowledge of the device's serial number, as demonstrated by Jerome Radcliffe at the Black Hat USA conference in August 2011.  NOTE: the vendor has disputed the severity of this issue, saying \"we believe the risk ",
+      "cwes": [],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-12718",
+      "cvss": 8.1,
+      "severity": "HIGH",
+      "published": "2018-02-15",
+      "modified": "2026-06-17",
+      "desc": "A Classic Buffer Overflow issue was discovered in Smiths Medical Medfusion 4000 Wireless Syringe Infusion Pump, Version 1.1, 1.5, and 1.6. A third-party component used in the pump does not verify input buffer size prior to copying, leading to a buffer overflow, allowing remote code execution on the target device. The pump receives the potentially malicious input infrequently and under certain conditions, increasing the difficulty of exploitation.",
+      "cwes": [
+        "CWE-120",
+        "CWE-119"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-14002",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-20",
+      "modified": "2026-06-17",
+      "desc": "GE Infinia/Infinia with Hawkeye 4 medical imaging systems all current versions are affected these devices use default or hard-coded credentials. Successful exploitation of this vulnerability may allow a remote attacker to bypass authentication and gain access to the affected devices.",
+      "cwes": [
+        "CWE-287",
+        "CWE-798"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-14006",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-03-20",
+      "modified": "2026-06-17",
+      "desc": "GE Xeleris versions 1.0,1.1,2.1,3.0,3.1, medical imaging systems, all current versions are affected, these devices use default or hard-coded credentials. Successful exploitation of this vulnerability may allow a remote attacker to bypass authentication and gain access to the affected devices.",
+      "cwes": [
+        "CWE-287",
+        "CWE-798"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2019-5024",
+      "cvss": 7.6,
+      "severity": "HIGH",
+      "published": "2019-04-11",
+      "modified": "2026-06-17",
+      "desc": "A restricted environment escape vulnerability exists in the \u201ckiosk mode\u201d function of Capsule Technologies SmartLinx Neuron 2 medical information collection devices running versions 9.0.3 or lower. A specific series of keyboard inputs can escape the restricted environment, resulting in full administrator access to the underlying operating system. An attacker can connect to the device via USB port with a keyboard or other HID device to trigger this vulnerability.",
+      "cwes": [
+        "CWE-693"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2019-11687",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2019-05-02",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in the DICOM Part 10 File Format in the NEMA DICOM Standard 1995 through 2019b and continuing in current implementations. The 128-byte preamble of a DICOM file that complies with this specification can contain arbitrary executable headers for multiple operating systems, including Portable Executable (PE) files for Windows and Executable and Linkable Format (ELF) files for Linux-based systems. This space is left unspecified so that dual-purpose files can be created. For ex",
+      "cwes": [
+        "CWE-20",
+        "CWE-20"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-10718",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2019-06-17",
+      "modified": "2026-06-17",
+      "desc": "Recently it was discovered as a part of the research on IoT devices in the most recent firmware for Shekar Endoscope that any malicious user connecting to the device can change the default SSID and password thereby denying the owner an access to his/her own device. This device acts as an Endoscope camera that allows its users to use it in various industrial systems and settings, car garages, and also in some cases in the medical clinics to get access to areas that are difficult for a human being",
+      "cwes": [
+        "CWE-255"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-10719",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2019-06-17",
+      "modified": "2026-06-17",
+      "desc": "Recently it was discovered as a part of the research on IoT devices in the most recent firmware for Shekar Endoscope that the device has default Wi-Fi credentials that are exactly the same for every device. This device acts as an Endoscope camera that allows its users to use it in various industrial systems and settings, car garages, and also in some cases in the medical clinics to get access to areas that are difficult for a human being to reach. Any breach of this system can allow an attacker ",
+      "cwes": [
+        "CWE-200"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-10721",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2019-06-17",
+      "modified": "2026-06-17",
+      "desc": "Recently it was discovered as a part of the research on IoT devices in the most recent firmware for Shekar Endoscope that the device has Telnet functionality enabled by default. This device acts as an Endoscope camera that allows its users to use it in various industrial systems and settings, car garages, and also in some cases in the medical clinics to get access to areas that are difficult for a human being to reach. Any breach of this system can allow an attacker to get access to video feed a",
+      "cwes": [
+        "CWE-284"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-10723",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2019-06-17",
+      "modified": "2026-06-17",
+      "desc": "Recently it was discovered as a part of the research on IoT devices in the most recent firmware for Shekar Endoscope that an attacker connected to the device Wi-Fi SSID can exploit a memory corruption issue and execute remote code on the device. This device acts as an Endoscope camera that allows its users to use it in various industrial systems and settings, car garages, and also in some cases in the medical clinics to get access to areas that are difficult for a human being to reach. Any breac",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2017-10724",
+      "cvss": 8.8,
+      "severity": "HIGH",
+      "published": "2019-06-17",
+      "modified": "2026-06-17",
+      "desc": "Recently it was discovered as a part of the research on IoT devices in the most recent firmware for Shekar Endoscope that an attacker connected to the device Wi-Fi SSID can exploit a memory corruption issue and execute remote code on the device. This device acts as an Endoscope camera that allows its users to use it in various industrial systems and settings, car garages, and also in some cases in the medical clinics to get access to areas that are difficult for a human being to reach. Any breac",
+      "cwes": [
+        "CWE-119"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2019-18254",
+      "cvss": 4.6,
+      "severity": "MEDIUM",
+      "published": "2020-06-29",
+      "modified": "2026-06-17",
+      "desc": "BIOTRONIK CardioMessenger II, The affected products do not encrypt sensitive information while at rest. An attacker with physical access to the CardioMessenger can disclose medical measurement data and the serial number from the implanted cardiac device the CardioMessenger is paired with.",
+      "cwes": [
+        "CWE-311",
+        "CWE-312"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2020-12036",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2020-06-29",
+      "modified": "2026-06-17",
+      "desc": "Baxter PrismaFlex all versions, PrisMax all versions prior to 3.x, The affected devices do not implement data-in-transit encryption (e.g., TLS/SSL) when configured to send treatment data to a PDMS (Patient Data Management System) or an EMR (Electronic Medical Record) system. An attacker could observe sensitive data sent from the device.",
+      "cwes": [
+        "CWE-319",
+        "CWE-319"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2020-12037",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2020-06-29",
+      "modified": "2026-06-17",
+      "desc": "Baxter PrismaFlex all versions, PrisMax all versions prior to 3.x, The affected devices do not implement data-in-transit encryption (e.g., TLS/SSL) when configured to send treatment data to a PDMS (Patient Data Management System) or an EMR (Electronic Medical Record) system. An attacker could observe sensitive data sent from the device.",
+      "cwes": [
+        "CWE-259",
+        "CWE-319"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2020-27278",
+      "cvss": 5.2,
+      "severity": "MEDIUM",
+      "published": "2021-03-15",
+      "modified": "2026-06-17",
+      "desc": "In Hamilton Medical AG,T1-Ventillator versions 2.2.3 and prior, hard-coded credentials in the ventilator allow attackers with physical access to obtain admin privileges for the device\u2019s configuration interface.",
+      "cwes": [
+        "CWE-798"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2020-27282",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "published": "2021-03-15",
+      "modified": "2026-06-17",
+      "desc": "In Hamilton Medical AG,T1-Ventillator versions 2.2.3 and prior, an XML validation vulnerability in the ventilator allows privileged attackers with physical access to render the device persistently unusable by uploading specially crafted configuration files.",
+      "cwes": [
+        "CWE-112"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2021-27408",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2021-06-11",
+      "modified": "2026-06-17",
+      "desc": "The affected product is vulnerable to an out-of-bounds read, which can cause information leakage leading to arbitrary code execution if chained to the out-of-bounds write vulnerability on the Welch Allyn medical device management tools (Welch Allyn Service Tool: versions prior to v1.10, Welch Allyn Connex Device Integration Suite \u2013 Network Connectivity Engine (NCE): versions prior to v5.3, Welch Allyn Software Development Kit (SDK): versions prior to v3.2, Welch Allyn Connex Central Station (CS)",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2021-27410",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2021-06-11",
+      "modified": "2026-06-17",
+      "desc": "The affected product is vulnerable to an out-of-bounds write, which may result in corruption of data or code execution on the Welch Allyn medical device management tools (Welch Allyn Service Tool: versions prior to v1.10, Welch Allyn Connex Device Integration Suite \u2013 Network Connectivity Engine (NCE): versions prior to v5.3, Welch Allyn Software Development Kit (SDK): versions prior to v3.2, Welch Allyn Connex Central Station (CS): versions prior to v1.8.6, Welch Allyn Service Monitor: versions ",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2023-0888",
+      "cvss": 4.9,
+      "severity": "MEDIUM",
+      "published": "2023-03-13",
+      "modified": "2026-06-17",
+      "desc": "An improper neutralization of directives in dynamically evaluated code vulnerability in the WiFi Battery embedded web server in versions L90/U70 and L92/U92 can be used to gain administrative access to the WiFi communication module. An authenticated user, having access to both the medical device WiFi network (such as a biomedical engineering staff member) and the specific B.Braun Battery Pack SP with WiFi web server credentials, could get administrative (root) access on the infusion pump communi",
+      "cwes": [
+        "CWE-95",
+        "CWE-94"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2025-12699",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2026-02-10",
+      "modified": "2026-06-17",
+      "desc": "The ZOLL ePCR IOS application reflects unsanitized user input into a WebView. Attacker-controlled strings placed into PCR fields (run number, incident, call sign, notes) are interpreted as HTML/JS when the app prints or renders that content. In the proof of concept (POC), injected scripts return local file content, which would allow arbitrary local file reads from the app's runtime context. These local files contain device and user data within the ePCR medical application, and if exposed, would ",
+      "cwes": [
+        "CWE-538"
+      ],
+      "keyword": "medical device"
+    },
+    {
+      "cve_id": "CVE-2000-1074",
+      "cvss": 10.0,
+      "severity": "UNKNOWN",
+      "published": "2000-12-11",
+      "modified": "2026-06-16",
+      "desc": "csstart program in iCal 2.1 Patch 2 uses relative pathnames to install the libsocket and libnsl libraries, which could allow the icsuser account to gain root privileges by creating a Trojan Horse library in the current or parent directory.",
+      "cwes": [],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2007-0033",
+      "cvss": 9.3,
+      "severity": "UNKNOWN",
+      "published": "2007-01-09",
+      "modified": "2026-06-16",
+      "desc": "Microsoft Outlook 2002 and 2003 allows user-assisted remote attackers to execute arbitrary code via a malformed VEVENT record in an .iCal meeting request or ICS file.",
+      "cwes": [],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2007-0471",
+      "cvss": 7.5,
+      "severity": "UNKNOWN",
+      "published": "2007-01-24",
+      "modified": "2026-06-16",
+      "desc": "sre/params.php in the Integrity Clientless Security (ICS) component in Check Point Connectra NGX R62 3.x and earlier before Security Hotfix 5, and possibly VPN-1 NGX R62, allows remote attackers to bypass security requirements via a crafted Report parameter, which returns a valid ICSCookie authentication token.",
+      "cwes": [
+        "CWE-264"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2007-4247",
+      "cvss": 4.3,
+      "severity": "UNKNOWN",
+      "published": "2007-08-08",
+      "modified": "2026-06-16",
+      "desc": "Windows Calendar on Microsoft Windows Vista allows remote attackers to cause a denial of service (NULL dereference and persistent application crash) via a malformed ICS file.",
+      "cwes": [],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2011-4504",
+      "cvss": 7.5,
+      "severity": "UNKNOWN",
+      "published": "2011-11-22",
+      "modified": "2026-06-16",
+      "desc": "The UPnP IGD implementation in the Pseudo ICS UPnP software on the ZyXEL P-330W allows remote attackers to establish arbitrary port mappings by sending a UPnP AddPortMapping action in a SOAP request to the WAN interface, related to an \"external forwarding\" vulnerability.",
+      "cwes": [
+        "CWE-16"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2013-4653",
+      "cvss": 4.3,
+      "severity": "UNKNOWN",
+      "published": "2013-08-20",
+      "modified": "2026-06-16",
+      "desc": "Multiple cross-site scripting (XSS) vulnerabilities in the signin functionality of ics in MyTeamwork services in Alcatel-Lucent Omnitouch 8660 My Teamwork before 6.7, Omnitouch 8670 Automated Message Delivery System (AMDS) before 6.7, Omnitouch 8460 Advanced Communication Server before 9.1, and OmniTouch 8400 Instant Communications Suite before 6.7.3 (1) allow remote attackers to inject arbitrary web script or HTML via a crafted URL that results in a reflected XSS or (2) allow user-assisted remo",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2016-9584",
+      "cvss": 9.1,
+      "severity": "CRITICAL",
+      "published": "2017-01-18",
+      "modified": "2026-06-17",
+      "desc": "libical allows remote attackers to cause a denial of service (use-after-free) and possibly read heap memory via a crafted ics file.",
+      "cwes": [
+        "CWE-416"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2016-5823",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2017-01-27",
+      "modified": "2026-06-17",
+      "desc": "The icalproperty_new_clone function in libical 0.47 and 1.0 allows remote attackers to cause a denial of service (use-after-free) via a crafted ics file.",
+      "cwes": [
+        "CWE-416"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2016-5824",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2017-01-27",
+      "modified": "2026-06-17",
+      "desc": "libical 1.0 allows remote attackers to cause a denial of service (use-after-free) via a crafted ics file.",
+      "cwes": [
+        "CWE-416"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2016-5825",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2017-01-27",
+      "modified": "2026-06-17",
+      "desc": "The icalparser_parse_string function in libical 0.47 and 1.0 allows remote attackers to cause a denial of service (out-of-bounds heap read) via a crafted ics file.",
+      "cwes": [
+        "CWE-125"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2016-6189",
+      "cvss": 4.3,
+      "severity": "MEDIUM",
+      "published": "2017-02-17",
+      "modified": "2026-06-17",
+      "desc": "Incomplete blacklist in SOGo before 2.3.12 and 3.x before 3.1.1 allows remote authenticated users to obtain sensitive information by reading the fields in the (1) ics or (2) XML calendar feeds.",
+      "cwes": [
+        "CWE-184"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2019-10011",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-03-25",
+      "modified": "2026-06-17",
+      "desc": "ICS/StaticPages/AddTestUsers.aspx in Jenzabar JICS (aka Internet Campus Solution) before 2019-02-06 allows remote attackers to create an arbitrary number of accounts with a password of 1234.",
+      "cwes": [
+        "CWE-798"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2019-10012",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2019-03-25",
+      "modified": "2026-06-17",
+      "desc": "Jenzabar JICS (aka Internet Campus Solution) before 9 allows remote attackers to upload and execute arbitrary .aspx code by placing it in a ZIP archive and using the MoxieManager (for .NET) plugin before 2.1.4 in the moxiemanager directory within the installation folder ICS\\ICS.NET\\ICSFileServer.",
+      "cwes": [
+        "CWE-434"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2020-10292",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "published": "2020-11-06",
+      "modified": "2026-06-17",
+      "desc": "Visual Components (owned by KUKA) is a robotic simulator that allows simulating factories and robots in order toimprove planning and decision-making processes. Visual Components software requires a special license which can beobtained from a network license server. The network license server binds to all interfaces (0.0.0.0) and listensfor packets over UDP port 5093. No authentication/authorization is required in order to communicate with theserver. The protocol being used is a property protocol",
+      "cwes": [
+        "CWE-248",
+        "CWE-119"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2020-9000",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2021-09-01",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in iPortalis iCS 7.1.13.0. Attackers can send a sequence of requests to rapidly cause .NET Input Validation errors. This increases the size of the log file on the remote server until memory is exhausted, therefore consuming the maximum amount of resources (triggering a denial of service condition).",
+      "cwes": [
+        "CWE-400"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2020-9002",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2021-09-01",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in iPortalis iCS 7.1.13.0. An attacker can gain privileges by intercepting a request and changing UserRoleKey=COMPANY_ADMIN to UserRoleKey=DOMAIN_ADMIN (to achieve Domain Administrator access).",
+      "cwes": [
+        "CWE-20"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2022-32739",
+      "cvss": 3.5,
+      "severity": "LOW",
+      "published": "2022-06-13",
+      "modified": "2026-06-17",
+      "desc": "When Secure::DisableBanner system configuration has been disabled and agent shares his calendar via public URL, received ICS file contains OTRS release number.",
+      "cwes": [
+        "CWE-200"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-0461",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2023-02-28",
+      "modified": "2026-06-17",
+      "desc": "There is a use-after-free vulnerability in the Linux Kernel which can be exploited to achieve local privilege escalation. To reach the vulnerability kernel configuration flag CONFIG_TLS\u00a0or CONFIG_XFRM_ESPINTCP\u00a0has to be configured, but the operation does not require any privilege.\n\nThere is a use-after-free bug of icsk_ulp_data\u00a0of a struct inet_connection_sock.\n\nWhen CONFIG_TLS\u00a0is enabled, user can install a tls context (struct tls_context) on a connected tcp socket. The context is not cleared i",
+      "cwes": [
+        "CWE-416",
+        "CWE-416"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-3219",
+      "cvss": 5.3,
+      "severity": "MEDIUM",
+      "published": "2023-07-10",
+      "modified": "2026-06-17",
+      "desc": "The EventON WordPress plugin before 2.1.2 does not validate that the event_id parameter in its eventon_ics_download ajax action is a valid Event, allowing unauthenticated visitors to access any Post (including unpublished or protected posts) content via the ics export functionality by providing the numeric id of the post.",
+      "cwes": [
+        "CWE-639"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-6097",
+      "cvss": 9.4,
+      "severity": "CRITICAL",
+      "published": "2023-11-13",
+      "modified": "2026-06-17",
+      "desc": "A SQL injection vulnerability has been found in ICS Business Manager, affecting version 7.06.0028.7089. This vulnerability could allow a remote user to send a specially crafted SQL query and retrieve all the information stored in the database. The data could also be modified or deleted, causing the application to malfunction.",
+      "cwes": [
+        "CWE-89"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-6098",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "published": "2023-11-13",
+      "modified": "2026-06-17",
+      "desc": "An XSS vulnerability has been discovered in ICS Business Manager affecting version 7.06.0028.7066. A remote attacker could send a specially crafted string exploiting the obdd_act parameter, allowing the attacker to steal an authenticated user's session, and perform actions within the application.",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-46805",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "published": "2024-01-12",
+      "modified": "2026-06-17",
+      "desc": "An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted resources by bypassing control checks.",
+      "cwes": [
+        "CWE-287"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-46914",
+      "cvss": 9.8,
+      "severity": "CRITICAL",
+      "published": "2024-02-07",
+      "modified": "2026-06-17",
+      "desc": "SQL Injection vulnerability in RM bookingcalendar module for PrestaShop versions 2.7.9 and before, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via ics_export.php.",
+      "cwes": [
+        "CWE-89",
+        "CWE-89"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2023-46784",
+      "cvss": 8.2,
+      "severity": "HIGH",
+      "published": "2024-05-17",
+      "modified": "2026-06-17",
+      "desc": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Server-Side Request Forgery (SSRF) vulnerability in Room 34 Creative Services, LLC ICS Calendar ics-calendar allows Absolute Path Traversal, : Server Side Request Forgery.This issue affects ICS Calendar: from n/a through 10.12.0.3.",
+      "cwes": [
+        "CWE-22",
+        "CWE-918"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2021-47304",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2024-05-21",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: fix tcp_init_transfer() to not reset icsk_ca_initialized\n\nThis commit fixes a bug (found by syzkaller) that could cause spurious\ndouble-initializations for congestion control modules, which could cause\nmemory leaks or other problems for congestion control modules (like CDG)\nthat allocate memory in their init functions.\n\nThe buggy scenario constructed by syzkaller was something like:\n\n(1) create a TCP socket\n(2) initiate a ",
+      "cwes": [
+        "CWE-415"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2024-37153",
+      "cvss": 7.5,
+      "severity": "HIGH",
+      "published": "2024-06-06",
+      "modified": "2026-06-17",
+      "desc": "Evmos is the Ethereum Virtual Machine (EVM) Hub on the Cosmos Network. There is an issue with how to liquid stake using Safe which itself is a contract. The bug only appears when there is a local state change together with an ICS20 transfer in the same function and uses the contract's balance, that is using the contract address as the sender parameter in an ICS20 transfer using the ICS20 precompile. This is in essence the \"infinite money glitch\" allowing contracts to double the supply of Evmos a",
+      "cwes": [
+        "CWE-670",
+        "CWE-670"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2024-38584",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2024-06-19",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ti: icssg_prueth: Fix NULL pointer dereference in prueth_probe()\n\nIn the prueth_probe() function, if one of the calls to emac_phy_connect()\nfails due to of_phy_connect() returning NULL, then the subsequent call to\nphy_attached_info() will dereference a NULL pointer.\n\nCheck the return code of emac_phy_connect and fail cleanly if there is an\nerror.",
+      "cwes": [
+        "CWE-476"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2024-41007",
+      "cvss": 3.3,
+      "severity": "LOW",
+      "published": "2024-07-15",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: avoid too many retransmit packets\n\nIf a TCP socket is using TCP_USER_TIMEOUT, and the other peer\nretracted its window to zero, tcp_retransmit_timer() can\nretransmit a packet every two jiffies (2 ms for HZ=1000),\nfor about 4 minutes after TCP_USER_TIMEOUT has 'expired'.\n\nThe fix is to make sure tcp_rtx_probe0_timed_out() takes\nicsk->icsk_user_timeout into account.\n\nBefore blamed commit, the socket would not timeout after\nic",
+      "cwes": [],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2024-39922",
+      "cvss": 4.6,
+      "severity": "MEDIUM",
+      "published": "2024-08-13",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability has been identified in LOGO! 12/24RCE (6ED1052-1MD08-0BA1) (All versions), LOGO! 12/24RCEo (6ED1052-2MD08-0BA1) (All versions), LOGO! 230RCE (6ED1052-1FB08-0BA1) (All versions), LOGO! 230RCEo (6ED1052-2FB08-0BA1) (All versions), LOGO! 24CE (6ED1052-1CC08-0BA1) (All versions), LOGO! 24CEo (6ED1052-2CC08-0BA1) (All versions), LOGO! 24RCE (6ED1052-1HB08-0BA1) (All versions), LOGO! 24RCEo (6ED1052-2HB08-0BA1) (All versions), SIPLUS LOGO! 12/24RCE (6AG1052-1MD08-7BA1) (All versions), ",
+      "cwes": [
+        "CWE-256"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2024-50034",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2024-10-21",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix lacks of icsk_syn_mss with IPPROTO_SMC\n\nEric report a panic on IPPROTO_SMC, and give the facts\nthat when INET_PROTOSW_ICSK was set, icsk->icsk_sync_mss must be set too.\n\nBug: Unable to handle kernel NULL pointer dereference at virtual address\n0000000000000000\nMem abort info:\nESR = 0x0000000086000005\nEC = 0x21: IABT (current EL), IL = 32 bits\nSET = 0, FnV = 0\nEA = 0, S1PTW = 0\nFSC = 0x05: level 1 translation fault\nu",
+      "cwes": [
+        "CWE-476"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2024-12835",
+      "cvss": 7.8,
+      "severity": "HIGH",
+      "published": "2024-12-30",
+      "modified": "2026-06-17",
+      "desc": "Delta Electronics DRASimuCAD ICS File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Delta Electronics DRASimuCAD. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ICS files. The issue results from the lack of proper validation of user-supplied data, wh",
+      "cwes": [
+        "CWE-787"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-22574",
+      "cvss": 6.5,
+      "severity": "MEDIUM",
+      "published": "2025-01-07",
+      "modified": "2026-06-17",
+      "desc": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Cleanshooter ICS Button ics-button allows Stored XSS.This issue affects ICS Button: from n/a through <= 0.6.",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-21710",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2025-02-27",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: correct handling of extreme memory squeeze\n\nTesting with iperf3 using the \"pasta\" protocol splicer has revealed\na problem in the way tcp handles window advertising in extreme memory\nsqueeze situations.\n\nUnder memory pressure, a socket endpoint may temporarily advertise\na zero-sized window, but this is not stored as part of the socket data.\nThe reasoning behind this is that it is considered a temporary setting\nwhich shouldn",
+      "cwes": [
+        "CWE-667"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-27915",
+      "cvss": 5.4,
+      "severity": "MEDIUM",
+      "published": "2025-03-12",
+      "modified": "2026-06-17",
+      "desc": "An issue was discovered in Zimbra Collaboration (ZCS) 9.0 and 10.0 and 10.1. A stored cross-site scripting (XSS) vulnerability exists in the Classic Web Client due to insufficient sanitization of HTML content in ICS files. When a user views an e-mail message containing a malicious ICS entry, its embedded JavaScript executes via an ontoggle event inside a <details> tag. This allows an attacker to run arbitrary JavaScript within the victim's session, potentially leading to unauthorized actions suc",
+      "cwes": [
+        "CWE-79"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-3135",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "published": "2025-04-03",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability classified as critical was found in fcba_zzm ics-park Smart Park Management System 2.1. This vulnerability affects unknown code of the file /api/system/dept/update. The manipulation leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "cwes": [
+        "CWE-74",
+        "CWE-89",
+        "CWE-89"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-37784",
+      "cvss": 5.5,
+      "severity": "MEDIUM",
+      "published": "2025-05-01",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ti: icss-iep: Fix possible NULL pointer dereference for perout request\n\nThe ICSS IEP driver tracks perout and pps enable state with flags.\nCurrently when disabling pps and perout signals during icss_iep_exit(),\nresults in NULL pointer dereference for perout.\n\nTo fix the null pointer dereference issue, the icss_iep_perout_enable_hw\nfunction can be modified to directly clear the IEP CMP registers when\ndisabling PPS or PEROUT",
+      "cwes": [
+        "CWE-476"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-10394",
+      "cvss": 4.7,
+      "severity": "MEDIUM",
+      "published": "2025-09-14",
+      "modified": "2026-06-17",
+      "desc": "A vulnerability has been found in fcba_zzm ics-park Smart Park Management System 2.0. Affected is an unknown function of the file ruoyi-quartz/src/main/java/com/ruoyi/quartz/controller/JobController.java of the component Scheduled Task Module. Such manipulation leads to code injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used.",
+      "cwes": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-10398",
+      "cvss": 6.3,
+      "severity": "MEDIUM",
+      "published": "2025-09-14",
+      "modified": "2026-06-17",
+      "desc": "A security flaw has been discovered in fcba_zzm ics-park Smart Park Management System 2.0. This vulnerability affects unknown code of the file FileUploadUtils.java. The manipulation of the argument File results in unrestricted upload. The attack can be launched remotely. The exploit has been released to the public and may be exploited.",
+      "cwes": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-40133",
+      "cvss": "N/A",
+      "severity": "UNKNOWN",
+      "published": "2025-11-12",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: Use __sk_dst_get() and dst_dev_rcu() in mptcp_active_enable().\n\nmptcp_active_enable() is called from subflow_finish_connect(),\nwhich is icsk->icsk_af_ops->sk_rx_dst_set() and it's not always\nunder RCU.\n\nUsing sk_dst_get(sk)->dev could trigger UAF.\n\nLet's use __sk_dst_get() and dst_dev_rcu().",
+      "cwes": [],
+      "keyword": "ICS"
+    },
+    {
+      "cve_id": "CVE-2025-40357",
+      "cvss": "N/A",
+      "severity": "UNKNOWN",
+      "published": "2025-12-16",
+      "modified": "2026-06-17",
+      "desc": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix general protection fault in __smc_diag_dump\n\nThe syzbot report a crash:\n\n  Oops: general protection fault, probably for non-canonical address 0xfbd5a5d5a0000003: 0000 [#1] SMP KASAN NOPTI\n  KASAN: maybe wild-memory-access in range [0xdead4ead00000018-0xdead4ead0000001f]\n  CPU: 1 UID: 0 PID: 6949 Comm: syz.0.335 Not tainted syzkaller #0 PREEMPT(full)\n  Hardware name: Google Compute Engine/Google Compute Engine, BIOS",
+      "cwes": [],
+      "keyword": "ICS"
+    }
+  ]
+}
